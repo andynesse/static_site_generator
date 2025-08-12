@@ -45,6 +45,8 @@ class ParentNode(HTMLNode):
         if not self.tag:
             raise ValueError("All parent nodes must have a html-tag")
         if not self.children:
+            print("!!!!!!!!!!!!!!!!!!!!!!!!!!YOYO!!!!!!!!!!")
+            print(self.tag, self.value, self.props)
             raise ValueError("All parent nodes must have child-node(s).")
         value = ""
         if self.value:

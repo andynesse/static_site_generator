@@ -16,7 +16,10 @@ def markdown_to_html_node(markdown):
                     value = lines[0][0].value
                     lines[0].pop(0)
                 quotes = [ParentNode("p", line) for line in lines if len(line) != 0 and len(line[0].value) != 0]
-                html_block = ParentNode("blockquote", quotes, value=value)
+                if len(quotes) == 0 and value:
+                    html_block = LeafNode("blockquote", value)
+                else:
+                    html_block = ParentNode("blockquote", quotes, value=value)
             case BlockType.CODE:
                 html_block = ParentNode("pre", [LeafNode("code", block[3:len(block)-3])])
             case BlockType.HEADING:

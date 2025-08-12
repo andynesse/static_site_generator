@@ -1,3 +1,4 @@
+import os
 from markdown_to_html_node import markdown_to_html_node
 from extract_markdown import extract_title
 
@@ -23,3 +24,13 @@ def generate_page(from_path, template_path, dest_path):
         written = file.write(template)
         if written != len(template):
             raise Exception(f"did not write to {dest_path} correctly. Expected written chars: {len(template)}, Actual: {written}")
+        
+def generate_pages_recursive(dir_path_content, template_path, dest_dir_path):
+    dirlist = os.listdir(dir_path_content)
+    for item in dirlist:
+        path = os.path.join(dir_path_content, item)
+        if os.path.isfile(path):
+            generate_page(path, template_path, os.path.join(dest_dir_path, item.replace(".md", ".html")))
+            continue
+        os.mkdir(os.path.join(dest_dir_path, item))
+        generate_pages_recursive(path, template_path, os.path.join(dest_dir_path, item))

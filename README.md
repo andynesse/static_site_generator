@@ -24,6 +24,8 @@ Converts Markdown to a static HTML site
 2. **Create your own content:**
     Create markdown files in the `/content` directory or edit the example files.
 
+    Also add your images in the `/docs/images` directory.
+
 3. **Build the HTML site from the shell:**
     ```bash
     ./build.sh

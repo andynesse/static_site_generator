@@ -7,25 +7,22 @@ def split_nodes_delimiter(old_nodes, delimiter, text_type):
         if node.text_type != TextType.TEXT:
             new_nodes.append(node)
             continue
-        if not delimiter in node.text:
+        if delimiter not in node.text:
             new_nodes.append(node)
             continue
         splitted = node.text.split(delimiter)
-        if len(splitted) < 3 or len(splitted) % 2 == 0:
-            raise Exception(f'Text node have trailing delimiter or too many delimiters: Expected count of {delimiter} to be 2')
-        for i in range(len(splitted) // 2):
-            if i == 0:
-                converted = [
-                    TextNode(splitted[0], TextType.TEXT),
-                    TextNode(splitted[1], text_type),
-                    TextNode(splitted[2], TextType.TEXT)
-                ]
+        # If delimiters are not paired, treat as plain text
+        if len(splitted) % 2 == 0:
+            # Even number of splits means trailing delimiter or unbalanced
+            new_nodes.append(TextNode(node.text, TextType.TEXT))
+            continue
+        for i, part in enumerate(splitted):
+            if part == "":
+                continue
+            if i % 2 == 0:
+                new_nodes.append(TextNode(part, TextType.TEXT))
             else:
-                converted = [
-                    TextNode(splitted[i*3], text_type),
-                    TextNode(splitted[i*3+1], TextType.TEXT)
-                ]
-            new_nodes.extend([text_node for text_node in converted if text_node.text != ""])
+                new_nodes.append(TextNode(part, text_type))
     return new_nodes
 
 def split_nodes_image(old_nodes):

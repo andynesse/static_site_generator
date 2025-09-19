@@ -1,46 +1,32 @@
-# Tolkien Fan Club
+# Lorem Ipsum Enthusiasts
 
-![JRR Tolkien sitting](/images/tolkien.png)
+![Lorem Ipsum generator](/images/lorem.png)
 
-Here's the deal, **I like Tolkien**.
+Here's the deal, **I love placeholder text**.
 
-> "I am in fact a Hobbit in all but size."
+> "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
 >
-> -- J.R.R. Tolkien
+> -- Cicero
 
-## Blog posts
+## Recent Articles
 
-- [Why Glorfindel is More Impressive than Legolas](/blog/glorfindel)
-- [Why Tom Bombadil Was a Mistake](/blog/tom)
-- [The Unparalleled Majesty of "The Lord of the Rings"](/blog/majesty)
+- [Why Lorem Ipsum is Better Than Plain English](/blog/why-lorem)
+- [The History of Dummy Text in Printing](/blog/history)
+- [How to Generate Your Own Lorem Ipsum Variants](/blog/variants)
 
-## Reasons I like Tolkien
+## Benefits of Using Lorem Ipsum
 
-- You can spend years studying the legendarium and still not understand its depths
-- It can be enjoyed by children and adults alike
-- Disney _didn't ruin it_ (okay, but Amazon might have)
-- It created an entirely new genre of fantasy
+- Focuses attention on design rather than content during layout
+- Creates a more realistic-looking template for clients
+- Has a natural-looking character and word distribution
+- Prevents clients from getting distracted by readable content
 
-## My favorite characters (in order)
+## Most Popular Lorem Ipsum Generators
 
-1. Gandalf
-2. Bilbo
-3. Sam
-4. Glorfindel
-5. Galadriel
-6. Elrond
-7. Thorin
-8. Sauron
-9. Aragorn
+1. LoremIpsum.io
+2. Hipster Ipsum
+3. Cupcake Ipsum
+4. Corporate Ipsum
+5. Cat Ipsum
 
-Here's what `elflang` looks like (the perfect coding language):
-
-```
-func main(){
-    fmt.Println("Aiya, Ambar!")
-}
-```
-
-Want to get in touch? [Contact me here](/contact).
-
-This site was generated with a custom-built [static site generator](https://www.boot.dev/courses/build-static-site-generator-python) from the course on [Boot.dev](https://www.boot.dev).
+Here's what `loremcode` looks like (the perfect placeholder generator):

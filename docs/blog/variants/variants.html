@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>How to Generate Your Own Lorem Ipsum Variants</title>
+    <link href="/static_site_generator/index.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <article><div><h1>How to Generate Your Own Lorem Ipsum Variants</h1><p><b>Posted on:</b> March 12, 2024 <b>Author:</b> Code Enthusiast</p><p><img src="/static_site_generator/images/code-screen.jpg" alt="Code screenshot"></img></p><p>While standard Lorem Ipsum is useful, sometimes you need specialized placeholder text for different contexts and industries.</p><blockquote>"Custom placeholder text can better communicate the intent of design elements."<p>— Design Systems Weekly</p></blockquote><h2>Standard Lorem Ipsum Generators</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget aliquam ultricies, nunc nisl aliquet nunc, quis aliquam nisl nunc eu nisl.</p><p>Popular generators include: - LoremIpsum.io - Lipsum.com - UI Placeholder</p><h2>Industry-Specific Variants</h2><p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Different industries have developed their own flavor of placeholder text:</p><p>### For Different Industries: - <b>Cupcake Ipsum</b> - For food blogs and restaurants - <b>Hipster Ipsum</b> - For trendy startups and agencies - <b>Corporate Ipsum</b> - For business and finance sites - <b>Cat Ipsum</b> - For pet-related businesses</p><h2>Creating Your Own Generator</h2><p>Here's a simple JavaScript function to create custom placeholder text:</p><p>```javascript function customIpsum(vocabulary, paragraphs) {   let output = '';   for (let p = 0; p < paragraphs; p++) {     let sentence = '';     for (let w = 0; w < 15; w++) {       sentence += vocabulary[Math.floor(Math.random() * vocabulary.length)] + ' ';     }     output += '<p>' + sentence.trim() + '.</p>';   }   return output; }</p><p>// Usage with tech terms const techWords = ['API', 'framework', 'database', 'cloud', 'responsive']; console.log(customIpsum(techWords, 2));</p></div></article>
+  </body>
+</html>

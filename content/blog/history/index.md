@@ -1,3 +1,5 @@
+[< Back Home](/)
+
 # The History of Dummy Text in Printing
 
 **Posted on:** February 3, 2024

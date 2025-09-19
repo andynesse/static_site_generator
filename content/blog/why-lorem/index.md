@@ -1,3 +1,5 @@
+[< Back Home](/)
+
 # Why Lorem Ipsum is Better Than Plain English
 
 **Posted on:** January 15, 2024

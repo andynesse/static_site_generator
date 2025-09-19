@@ -1,3 +1,5 @@
+[< Back Home](/)
+
 # How to Generate Your Own Lorem Ipsum Variants
 
 **Posted on:** March 12, 2024

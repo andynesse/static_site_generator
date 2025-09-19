@@ -10,9 +10,9 @@ Here's the deal, **I love placeholder text**.
 
 ## Recent Articles
 
-- [Why Lorem Ipsum is Better Than Plain English](/blog/why-lorem)
-- [The History of Dummy Text in Printing](/blog/history)
-- [How to Generate Your Own Lorem Ipsum Variants](/blog/variants)
+- [Why Lorem Ipsum is Better Than Plain English](/blog/why-lorem/index.html)
+- [The History of Dummy Text in Printing](/blog/history/index.html)
+- [How to Generate Your Own Lorem Ipsum Variants](/blog/variants/index.html)
 
 ## Benefits of Using Lorem Ipsum
 
